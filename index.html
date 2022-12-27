@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="./style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="cart-modal-overlay">
+        <div class="cart-modal">
+          <i id="close-btn" class="fas fa-times"></i>
+            <h1 class="cart-is-empty">Cart is empty</h1>
+          
+            <div class="product-rows">
+            </div>
+            <div class="total">
+              <h1 class="cart-total">TOTAL</h1>
+                <span class="total-price">$0</span>
+                  <button class="purchase-btn">PURCHASE</button>
+            </div>
+          </div>
+        </div>
+
+    <!-- header section -->
+    <header id="header" class="header-wrappers">
+        <img class="logo" src="./images/Logo.gif" alt="logo" id="logo">
+        <nav>
+            <ul class="nav_links">
+                <li><a href="#">На верх <img class="icon" src="./images/upload.png" alt=""></a></li>
+                <li><a href="./about.html">О компании</a></li>
+                <li><a href="./contacts.html">Обратная связь</a></li>
+            </ul>
+        </nav>
+
+        <div class="cart-btn">
+            <i id="cart" class="fas fa-shopping-cart"></i>
+              <span class ="cart-quantity">0</span>
+          </div>
+    </header>
+
+    <!-- about section -->
+    <section class="main-wrapper">
+
+        <div class="text-center-before-header">
+            <h1>Рогачевский завод Диапроектор ОАО</h1>
+            <p>Оптические прицелы, ночные прицелы для стрелкового оружия и охотничьих ружей. <br /> Насадки ночного
+                видения. Осветители лазерные. Бинокли. <br /> Оборудование для автосервисов. Зеркала автомобильные.
+                <br /> Коммутационное оборудование. Светильники антивандальные.</p>
+        </div>
+    </section>
+
+    <!-- main content section -->
+    <section>
+        <div class="trend-center-wrapper">
+            <h1>Оптические прицелы</h1>
+            <p>Рекомендовано для вас</p>
+        </div>
+        <div class="galleryMains">
+            <div class="gallery-grid">
+                <a href="./scopes/ns1.html">
+                    <img src="./images/optics/1.jpg" alt="optic1" class="product-image imagesModal">
+                </a>
+                <h1>Optic DIAR NS1</h1>
+                <span class="product-price">$230</span>
+
+                <button class="add-to-cart">Заказать</button>
+            </div>
+            <div class="gallery-grid">
+                <a href="./scopes/ns2.html">
+                    <img class="product-image" src="./images/optics/2.jpg" alt="optic2">
+                </a>
+                <h1>Optic DIAR NS2</h1>
+                <span class="product-price">$300</span>
+                <button class="add-to-cart">Заказать</button>
+
+            </div>
+            <div class="gallery-grid">
+                <a href="./scopes/ns3.html">
+                    <img class="product-image" src="./images/optics/3.jpg" alt="optic3">
+                </a>
+                <h1>Optic DIAR NS3</h1>
+                <span class="product-price">$270</span>
+                <button class="add-to-cart">Заказать</button>
+
+            </div>
+            <div class="gallery-grid">
+                <a href="./scopes/ns4.html">
+                    <img class="product-image" src="./images/optics/4.jpg" alt="optic4">
+                </a>
+                <h1>Optic DIAR NS4</h1>
+                <span class="product-price">$530</span>
+                <button class="add-to-cart">Заказать</button>
+
+            </div>
+            <div class="gallery-grid">
+                <a href="./scopes/ns5.html">
+                    <img class="product-image" src="./images/optics/5.jpg" alt="optic5">
+                </a>
+                <h1>Optic DIAR NS5</h1>
+                <span class="product-price">$500</span>
+                <button class="add-to-cart">Заказать</button>
+
+            </div>
+            <div class="gallery-grid">
+                <a href="./scopes/ns6.html">
+                    <img class="product-image" src="./images/optics/6.jpg" alt="optic6">
+                </a>
+                <h1>Optic DIAR NS6</h1>
+                <span class="product-price">$530</span>
+                <button class="add-to-cart">Заказать</button>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- main product section -->
+    <section class="main-products-wrapper">
+        <h1>Наши продукты</h1>
+        <div class="galleryMains">
+            <div class="gallery-grid">
+                <a href="./scopes/ns7.html">
+                    <img  class="product-image"src="./images/optics/7.jpg" alt="optic1">
+                </a>
+                <h1>Optic DIAR NS7</h1>
+                <span class="product-price">$320</span>
+                <button class="add-to-cart">Заказать</button>
+
+            </div>
+            <div class="gallery-grid">
+                <a href="./scopes/ns8.html">
+                    <img  class="product-image"src="./images/optics/8.jpg" alt="optic2">
+                </a>
+                <h1>Optic DIAR NS8</h1>
+                <span class="product-price">$420</span>
+                <button class="add-to-cart">Заказать</button>
+
+            </div>
+            <div class="gallery-grid">
+                <a target="_blank" href="./scopes/ns9.html">
+                    <img  class="product-image"src="./images/optics/3.jpg" alt="optic3">
+                </a>
+                <h1>Optic DIAR NS9</h1>
+                <span class="product-price">$500</span>
+                <button class="add-to-cart">Заказать</button>
+
+            </div>
+            <div class="gallery-grid">
+                <a target="_blank" href="./scopes/ns10.html">
+                    <img  class="product-image"src="./images/optics/1.jpg" alt="optic4">
+                </a>
+                <h1>Optic DIAR NS10</h1>
+                <span class="product-price">$600</span>
+                <button class="add-to-cart">Заказать</button>
+
+            </div>
+            <div class="gallery-grid">
+                <a target="_blank" href="./scopes/ns11.html">
+                    <img  class="product-image"src="./images/optics/6.jpg" alt="optic5">
+                </a>
+                <h1>Optic DIAR NS11</h1>
+                <span class="product-price">$620</span>
+                <button class="add-to-cart">Заказать</button>
+
+            </div>
+            <div class="gallery-grid">
+                <a target="_blank" href="./scopes/ns12.html">
+                    <img  class="product-image"src="./images/optics/7.jpg" alt="optic6">
+                </a>
+                <h1>Optic DIAR NS12</h1>
+                <span class="product-price">$720</span>
+                <button class="add-to-cart">Заказать</button>
+
+            </div>
+    </section>
+    <section>
+
+    </section>
+
+    <!-- new products section -->
+    <section>
+        <h1 id="wrapper-co-footer">Наши последние новинки</h1>
+        <div class="grid-co-footer">
+            <div class="flex-grid">
+                <a target="_blank" href="./new_products/1.html">
+                    <img src="./images/optics/11.jpg" alt="optic11">
+                </a>
+                <label>Антивандальный малогабаритный</label>
+            </div>
+            <div class="flex-grid">
+                <a target="_blank" href="./new_products/template.html">
+                    <img src="./images/optics/12.jpg" alt="optic12">
+                </a>
+                <label>НБУ 12-75-801</label>
+            </div>
+            <div class="flex-grid">
+                <a target="_blank" href="./new_products/3.html">
+                    <img src="./images/optics/13.jpg" alt="optic13">
+                </a>
+                <label>НБУ 12-75-601</label>
+            </div>
+            <div class="flex-grid">
+                <a target="_blank" href="./new_products/4.html">
+                    <img src="./images/optics/14.jpg" alt="optic14">
+                </a>
+                <label>ФБУ 12-2х9-702 У1</label>
+            </div>
+        </div>
+    </section>
+</body>
+
+<script src="./cart.js"></script>
+<script src="./index.js"></script>
+<script>
+    window.onscroll = function () { myFunction() };
+
+    let header = document.getElementById("header");
+    console.log(header);
+    let sticky = header.offsetTop;
+
+    function myFunction() {
+        if (window.pageYOffset > sticky) {
+            header.classList.add("sticky");
+        } else {
+            header.classList.remove("sticky");
+        }
+    }
+</script>
+
+</html>
+
+<style>
+    .icon {
+        height: 15px;
+
+    }
+</style>

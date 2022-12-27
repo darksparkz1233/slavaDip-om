@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>О компании</title>
+    <!-- css -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="main-content">
+        <!-- header section -->
+        <header id="header" class="header-wrappers">
+           <img class="logo" src="./images/Logo.gif" alt="logo" id="logo">
+           <nav>
+               <ul class="nav_links">
+                   <li><a href="./about.html">На верх <img class="icon" src="./images/upload.png" alt=""></a></li>
+                   <li><a class="clicked-linked" target="_blank" href="./about.html">О компании</a></li>
+                   <li><a href="./contacts.html">Обратная связь</a></li>
+               </ul>
+           </nav>
+       </header>
+   
+      <!-- about section -->
+    <section class="main-content">
+        <div class="main-text">
+            <h1>О компании</h1>
+            <p>
+                ОАО "Рогачевский завод "Диапроектор" – признанный лидер на отечественном рынке, специализирующийся на оптическом приборостроении. Предприятие входит в состав холдинга БелОМО. Благодаря производственным мощностям, технологическому уровню, широкому ассортименту качественной продукции, заслужили признание покупателей не только в Беларуси, но и за рубежом. 
+            </p>
+            <div class="images">
+                <img class="image" src="./images/1.jpg" alt="">
+                <p class="paragraph">ОАО "Рогачевский завод "Диапроектор" сегодня выпускает:</p>
+                <ul class="list">
+                    <li>
+                        приборы специального назначения;
+                    </li>
+                    <li>
+                        прицелы и приборы оптические;
+                    </li>
+                    <li>
+                        автосервисное оборудование;
+                    </li>
+                    <li>
+                        коммутационное оборудование;
+                    </li>
+                    <li>
+                        светильники антивандальные.
+                    </li>
+                </ul>
+                <img class="image" src="./images/2.jpg" alt="">
+                <p class="paragraph">
+                    В производстве применяем новейшие технологии, полагаясь на международные стандарты качества. Постепенно расширяем количество наименований товара, улучшаем качество. Свою продукцию экспортируем в страны СНГ, США, страны Европейского союза. Сотрудничая с нами, вы получите надежного и компетентного партнера, качественную продукцию, достойный сервис, приемлемые цены.
+                </p>
+                <img class="image" src="./images/3.jpg" alt="">
+                <p style="font-weight: bold; margin-top: 2rem;">
+                    Мы всегда рады новому сотрудничеству!
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- main content section -->
+    <section>
+       
+    </section>
+    
+</body>
+</html>
+
+<style>
+    .main-content {
+        display: flex;
+        flex-direction: column;
+
+        padding: 0 5rem 0 5rem;
+        height: 40%;
+
+        font-size: 20px;
+        font-family: 'Lato', sans-serif;
+    }
+    .main-text h1 {
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+    .main-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .image {
+        margin-top: 5rem;
+
+        width: 50%;
+    }
+
+    #header {
+        width: 100%;
+        margin-bottom: 5rem;
+    }
+
+    .clicked-linked {
+        color: rgb(0, 0, 0);
+        font-weight: bold;
+    }
+
+    .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+    .paragraph {
+        margin-top: 2rem;
+    }
+    
+    li {
+        list-style: circle;
+        margin-left: 2rem;
+    }
+
+    .icon {
+        height: 15px;
+    }
+
+</style>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+let header = document.getElementById("header");
+console.log(header);
+let sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
